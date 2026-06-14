@@ -1,0 +1,74 @@
+{
+  "sops": [
+    {
+      "id": "DSOP 10",
+      "title": "Dispensing Veterinary Prescriptions",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, trained staff"},
+      "sections": [
+        {"heading": "1. Validation", "steps": ["Verify animal type, owner data, and prescriber indicators.", "Ensure Schedule 2/3 veterinary scripts contain RCVS numbers.", "Enforce 28-day maximum validity timelines on controlled vet items.", "Print label stating: 'For animal treatment only - keep out of reach of children'.", "Retain purchase logs, batch files, and prescriptions for 5 years minimum."]}
+      ]
+    },
+    {
+      "id": "DSOP 11",
+      "title": "Dispensing a Private Prescription (Human)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, trained staff"},
+      "sections": [
+        {"heading": "1. Process", "steps": ["Confirm signature, registration details, and date rules.", "Cross-reference prescriber status via regulatory databases.", "Log entries into the POM Register within 24 hours.", "Retain private scripts and record books for 2 years minimum from the last entry date.", "Route private Schedule 2/3 scripts directly to the NHSBSA via standardized submission pathways."]}
+      ]
+    },
+    {
+      "id": "DSOP 12",
+      "title": "EPS Dispensing",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacy team"},
+      "sections": [
+        {"heading": "1. Workflow", "steps": ["Pull scripts via Titan EPS queues.", "Check NHS Spine tracker if nominations are missing.", "Change nominations only after obtaining explicit patient consent.", "Audit quantity translation anomalies on the Spine interface layout.", "Transmit accurate dispense notifications before claiming reimbursement items."]}
+      ]
+    },
+    {
+      "id": "DSOP 13",
+      "title": "Handing Out Checked & Bagged Medicines (Pharmacist Authorisation)",
+      "metadata": {"version": "1.0", "effective_from": "07/01/2026", "review_date": "01/04/2028", "applies_to": "Pharmacy team"},
+      "sections": [
+        {"heading": "1. Operational Parameters", "content": "Aligned with the 7 January 2026 supervision framework. Permits authorised staff to hand over pre-checked items during brief RP absences without altering standard RP accountability structures."},
+        {"heading": "2. Preconditions", "steps": ["An RP must remain appointed for the premises.", "Items must be sealed and explicitly marked as checked & bagged.", "Pharmacists must log written or verbal authorization updates inside the communications book or log sheet."]},
+        {"heading": "3. Exclusions", "steps": ["No Controlled Drugs.", "No High-Risk items (methotrexate, lithium, valproate).", "No newly prescribed lines requiring clinical counselling.", "No cold chain fridge items.", "No items where patients explicitly request an RP interface."]}
+      ]
+    },
+    {
+      "id": "OSOP 03",
+      "title": "Delivery of Medication (App-Based ePOD)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, driver, staff"},
+      "sections": [
+        {"heading": "1. Delivery Preparation", "steps": ["Log delivery consent and preferences in Titan PMR.", "Apply warning text stickers: FRIDGE, CD, or REFER TO PHARMACIST.", "Export files to the delivery app containing item counts and specific transit notes.", "Load fridge units and CDs immediately before vehicle departure."]},
+        {"heading": "2. Drop-off Execution", "steps": ["Verify recipient name and address details at the doorstep.", "Capture an e-signature or photograph within the delivery app layout.", "Do not leave lines unattended unless an explicit safe-place document is logged.", "Return failed deliveries to the pharmacy. Return stock to shelves, fridge, or CD safe before closing."]}
+      ]
+    },
+    {
+      "id": "CDSOP 04",
+      "title": "Instalment Dispensing (FP10MDA) for OST",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, dispensing staff"},
+      "sections": [
+        {"heading": "1. Purpose & Controls", "content": "Ensures FP10MDA instalment tracking for methadone and buprenorphine is run in accordance with Turning Point Rochdale escalation rules."},
+        {"heading": "2. Execution Steps", "steps": ["Validate instalment instructions and CD writing rules.", "Confirm script stays within its 28-day window.", "Input alert headers on Titan: 'OST FP10MDA - missed dose rules apply'.", "Log quantities, signatures, and dates on the physical layout chart of the FP10MDA document at supply.", "Write CD Register rows immediately after drug handover, never in advance."]}
+      ]
+    },
+    {
+      "id": "CDSOP 05",
+      "title": "Supervised Consumption",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, trained staff"},
+      "sections": [
+        {"heading": "1. Pre-supervision Rules", "steps": ["Confirm a dose is currently due.", "Verify identity elements using standard lookups.", "Evaluate intoxication risks (slurred speech, sedation, unsteady gait).", "Withhold doses if intoxication is suspected; immediately notify the pharmacist and Turning Point."]},
+        {"heading": "2. Ingestion Review", "steps": ["Measure liquids via calibrated cylinders or syringes.", "Observe the patient swallowing methadone or waiting for sublingual buprenorphine to fully dissolve.", "Log administration instances directly on the back of the FP10MDA template chart."]}
+      ]
+    },
+    {
+      "id": "CDSOP 09",
+      "title": "OST Missed Doses, Suspension & Escalation",
+      "metadata": {"version": "1.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, trained staff"},
+      "sections": [
+        {"heading": "1. Turning Point Rules", "content": "3 consecutive missed picks → SUSPEND supply. 4 or more misses across 14 days → CONTACT Hub."},
+        {"heading": "2. Procedure", "steps": ["Mark records as NOT SUPPLIED on the text grid.", "Add alert flags to Titan PMR profiles.", "If 3 consecutive days are missed, place the script into the CD safe and mark status as SUSPENDED.", "Call Turning Point Rochdale Hub on 01706 377197 or 0300 555 0234.", "Do not restart supply until a new prescription document is issued by the hub."]}
+      ]
+    }
+  ]
+}

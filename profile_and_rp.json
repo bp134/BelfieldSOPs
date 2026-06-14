@@ -1,0 +1,79 @@
+{
+  "pharmacy_profile": {
+    "name": "Belfield Pharmacy",
+    "location": "Rochdale (England)",
+    "pmr_system": "Titan",
+    "consultation_it_platform": "PharmOutcomes + NCRS (Smartcard)",
+    "services_provided": [
+      "Pharmacy First",
+      "NMS",
+      "Vaccinations (NHS Flu/COVID; private MenACWY)",
+      "Supervised Consumption (limited; methadone & buprenorphine)",
+      "MDS (Pillbook compliance aid; no care homes)"
+    ],
+    "delivery_arrangements": "In-house driver (part-time) using app-based delivery software with e-signature and/or photo capture",
+    "paper_prescription_storage": "Locked cabinet in dispensary (plus any physical patient-identifiable documentation)",
+    "opening_hours": {
+      "monday_friday": "09:00–13:00 and 14:00–18:00",
+      "saturday": "09:00–12:00",
+      "sunday_bank_holidays": "Closed"
+    },
+    "staffing_model": {
+      "pharmacist": "1.0 FTE Pharmacist (plus locum pharmacist 1 day/week)",
+      "dispensing_assistants": "2.0 FTE Dispensing Assistants",
+      "delivery_driver": "1 part-time in-house delivery driver"
+    }
+  },
+  "sops": [
+    {
+      "id": "RPSOP 01",
+      "title": "Responsible Pharmacist",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist (including locums)"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure the Responsible Pharmacist (RP) role is performed compliantly and with clear handover, documentation, and operational control."},
+        {"heading": "2.1 Start of RP duty (on arrival)", "steps": ["Confirm RP status and ensure only one RP is in place.", "Complete the Responsible Pharmacist Notice legibly and display it prominently.", "Update the RP Log with name, GPhC number, and start time.", "Review handover/communications book, outstanding tasks, clinical issues, and confirm SOP suite is current."]},
+        {"heading": "2.2 During RP duty", "steps": ["Maintain safe supervision and delegation aligned to the Belfield role matrix (RPSOP 04).", "Ensure secure handling of prescriptions and locked patient-identifiable documentation.", "Ensure patient-facing services are delivered only when competent staff and required IT access are available."]},
+        {"heading": "2.3 End of RP duty (leaving for the day)", "steps": ["Record finish time in the RP Log.", "Remove/amend the RP Notice.", "Document key handover items: clinical queries, CD concerns, near misses, or service follow-ups."]}
+      ]
+    },
+    {
+      "id": "RPSOP 02",
+      "title": "Absence of the Responsible Pharmacist",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, Dispensing Assistants, Driver, MCA staff"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To define what activities may continue safely when the RP is temporarily absent, and what activities must stop."},
+        {"heading": "2.1 What can continue during RP absence", "steps": ["Ordering and receiving stock excluding Controlled Drugs.", "Putting stock away and date checking excluding Controlled Drugs.", "Cleaning and routine housekeeping.", "Accessing Titan PMR for admin tasks, filing, retrieving EPS, or printing tokens.", "Receiving prescriptions and assembling administrative bundles.", "Responding to general non-clinical enquiries."]},
+        {"heading": "2.2 What must NOT occur during RP absence", "steps": ["No dispensing and no labelling.", "No sale/supply of P medicines.", "No handing out dispensed prescriptions/medicines to patients/representatives.", "No dispatch for delivery (no handing out delivery bags to driver).", "No clinical checks or pharmacist-only decisions."]},
+        {"heading": "2.4 Maximum absence rule", "content": "The RP may be absent for up to 2 hours total in any 24-hour period. If exceeded, activities requiring the RP must stop."}
+      ]
+    },
+    {
+      "id": "RPSOP 03",
+      "title": "Roles & Responsibilities of Pharmacy Staff",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "All staff (including locums)"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure delegation is safe, consistent, and auditable, and that staff competence is recorded."},
+        {"heading": "2. Procedure", "steps": ["Review task lists and add Belfield-specific workflows.", "Tick and authorize which tasks each role may perform based on training.", "Maintain staff competency records containing qualifications and RP signatures.", "Review triggers: every 2 years, when new tasks launch, or after incidents."]}
+      ]
+    },
+    {
+      "id": "RPSOP 04",
+      "title": "Roles & Responsibility Matrix (Belfield)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "All staff"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To define which roles can undertake which tasks at Belfield Pharmacy, and to support safe delegation and auditability."},
+        {"heading": "2. How to use", "content": "This matrix is a local authorisation tool. A tick indicates 'may perform once trained and competent'. Pharmacist-only constraints must be respected."},
+        {"heading": "3. Task Matrix Template", "content": "Insert local authorization layout here mapping roles against Titan PMR, PharmOutcomes, and delivery apps."}
+      ]
+    },
+    {
+      "id": "RPSOP 05",
+      "title": "Accessible Information Standard (AIS)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "All staff"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure Belfield Pharmacy identifies and meets patients' communication support needs related to disability or sensory loss via Ask, Record, Flag, Share, Act, Review."},
+        {"heading": "2. Steps", "steps": ["ASK: Enquire about communication needs at first registration.", "RECORD: Input specific requirements clearly into Titan PMR.", "FLAG: Make constraints highly visible using prefixes like 'AIS:'.", "SHARE: Disclose preferences securely with other healthcare professionals.", "ACT: Provide alternative formats like larger fonts, SMS, or emails.", "REVIEW: Re-verify choices periodically during NMS or service touchpoints."]}
+      ]
+    }
+  ]
+}

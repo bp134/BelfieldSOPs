@@ -1,0 +1,83 @@
+{
+  "sops": [
+    {
+      "id": "DSOP 01",
+      "title": "Receiving a Prescription",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacy team"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure prescriptions are received, triaged, and booked-in safely, with correct patient details and charge handling."},
+        {"heading": "2. Steps", "steps": ["Identify request style: EPS token or paper.", "Establish if patient is waiting or returning.", "Validate fields (name, address, age if under 12).", "Confirm validity windows (6 months standard, 28 days for Schedule 2-4 CDs).", "Record exemption state or process correct prescription charges.", "Route task into the processing workflow layout queue in Titan."]}
+      ]
+    },
+    {
+      "id": "DSOP 02",
+      "title": "Clinical Check of a Prescription",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist only"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure each prescription is clinically appropriate, legally valid, and safe for supply at the time of dispensing."},
+        {"heading": "2. Appropriateness Checks", "steps": ["Verify indication, dose, frequency, route, and formulation.", "Cross-reference allergies, interactions, and duplication risks.", "Audit high-risk profiles: narrow therapeutic index drugs, steroid tapers, weekly methotrexate, or paediatric doses.", "Review Opioids: Check starting doses, safe titration, and co-prescribing sedation risks.", "Log interventions inside Titan and write relevant counselling prompts."]}
+      ]
+    },
+    {
+      "id": "DSOP 03",
+      "title": "Labelling a Prescription",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, dispensing staff"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure dispensing labels are generated accurately from the prescription and Titan PMR, with appropriate checks for clarity, patient identity, warnings and endorsements."},
+        {"heading": "2. Protocol Rules", "steps": ["Verify script clarity before running labels; scale queries up to the pharmacist.", "Double-check calculations for variable doses or paediatrics.", "Confirm Titan PMR matches exactly. Handle duplicate name warnings securely.", "Review automated notes for brand selections, compliance aids, or AIS text flags.", "Generate software labels without manual text changes."]}
+      ]
+    },
+    {
+      "id": "DSOP 04",
+      "title": "Assembling a Prescription",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, dispensing staff"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure items are selected, assembled and prepared safely, using the prescription as the primary source and preserving an audit trail for checking."},
+        {"heading": "2. Steps", "steps": ["Use the physical prescription or token as primary source, not just the text label.", "Pick components into basket and verify expiration markers.", "Count quantities and keep bulk or empty containers inside the basket for accuracy checking evidence.", "Write open dates and calculated expiries on bulk liquid medications.", "Apply text labels cleanly without hiding critical tracking indices, markings, or braille."]},
+        {"heading": "3. Owings Management", "steps": ["Print an owing voucher via Titan if stock is low.", "Remind CD patients that remaining balances must be collected within the initial 28-day script validity framework.", "Audit outstanding owing queues twice daily.", "Process incoming stock against original orders before sending to accuracy check."]}
+      ]
+    },
+    {
+      "id": "DSOP 05",
+      "title": "Accuracy Checking of a Prescription",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, ACT if authorized"},
+      "sections": [
+        {"heading": "1. Purpose", "content": "To ensure the dispensed product and label exactly match the prescription and are safe to supply, with errors captured for learning."},
+        {"heading": "2. Core Checklist", "steps": ["Confirm a pharmacist clinical check is present.", "Enforce ACT boundaries: do not pass CDs, high-risk items, or complex interactions to an ACT.", "Match label details, container choices, and final content counts against the script.", "Log errors instantly inside the near-miss log.", "Bag finalized lines; split fridge items into clear bags marked 'FRIDGE'.", "Annotate items needing reconstitution so they are not supplied dry."]}
+      ]
+    },
+    {
+      "id": "DSOP 06",
+      "title": "Handing Out Dispensed Prescriptions",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacy team"},
+      "sections": [
+        {"heading": "1. Standard Hand-out", "steps": ["Identify patient via name, address, and DOB.", "Retrieve main items along with secondary locations (fridge or CD locker).", "Verify labels match tracking numbers.", "Take exemptions or payments.", "Follow attached pharmacist counselling tags.", "Use antibiotic counselling prompts during handover."]},
+        {"heading": "2. High Risk items", "steps": ["Verify CD scripts fall inside 28-day limits. Capture signatures.", "Physically open and show insulin boxes to patients to confirm expected brands.", "Do not hand out items during an RP absence unless a 'Checked & Bagged' DSOP 13 protocol is explicitly authorized."]}
+      ]
+    },
+    {
+      "id": "DSOP 07",
+      "title": "Repeat Dispensing (eRD)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacy team"},
+      "sections": [
+        {"heading": "1. Workflow", "steps": ["Explain the eRD mechanism to patients during setup.", "At each cycle, verify items remain appropriate.", "Ask: Are you still taking this? Any side effects? Any hospital adjustments?", "Escalate problems to the pharmacist and log details on Titan.", "Mark unused items as 'Not Dispensed' via the electronic claim message.", "Warn patients on their final issue to request a new batch from their GP."]}
+      ]
+    },
+    {
+      "id": "DSOP 08",
+      "title": "Specials (Unlicensed Medicines)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist, trained staff"},
+      "sections": [
+        {"heading": "1. Protocol", "steps": ["Check for available licensed alternatives before placing orders.", "Match received supplies against invoices and prescriptions.", "Verify Certificate of Conformity details.", "Quarantine discrepancies immediately.", "Retain supply pathways, batch histories, and tracking indices for 5 years minimum.", "Submit ADR reactions to the MHRA Yellow Card system."]}
+      ]
+    },
+    {
+      "id": "DSOP 09",
+      "title": "Serious Shortage Protocol (SSP)",
+      "metadata": {"version": "3.0", "effective_from": "01/05/2026", "review_date": "01/04/2028", "applies_to": "Pharmacist-led"},
+      "sections": [
+        {"heading": "1. Rules", "steps": ["Confirm a valid SSP is running in England.", "Verify replacement strategies fall inside protocol constraints.", "Secure patient consent.", "Apply correct layout text labels stating supply under SSP plus the reference number.", "Endorse electronic claims with specific SSP markers, invoice codes, and pack sizes."]}
+      ]
+    }
+  ]
+}
